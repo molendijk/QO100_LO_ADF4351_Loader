@@ -65,3 +65,16 @@ A reboot of the D1-mini will execute the code and load the ADF4351
 registers to generate the 2350 MHz LO.
 
 ## Implementation
+
+The goal is to achieve the cleanest possible spectrum.
+Using the ADF4351 in Integer mode, spurs are naturally absent.
+The LO frequency was choden to be 2350 MHz, which is an exact 
+integer multiple of the on-board reference clock, 25 MHz,
+of the ADF4351 Eval board.
+
+In addition the idea is even to replace the local 25 MHz oscillator 
+with an externally generated GPS Diciplined Oscillator 
+reference of 25 MHz to achieve a very precise LO frequency not subject
+to drift.
+
+![The ADF4351 Software](/images/ADF435x_Software_Main.png)
