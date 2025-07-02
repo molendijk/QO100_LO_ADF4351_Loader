@@ -77,4 +77,4 @@ with an externally generated GPS Diciplined Oscillator
 reference of 25 MHz to achieve a very precise LO frequency not subject
 to drift.
 
-![The ADF4351 Software](/images/ADF435x_Software_Main.png)
+![The ADF4351 Software](/Images/ADF435x_Software_Main.png)
