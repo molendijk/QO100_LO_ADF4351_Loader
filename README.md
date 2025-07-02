@@ -49,6 +49,7 @@ Done.
 
 ## Connections D1-mini to ADF4351 Eval board V1.4
 
+Between the D1-mini and the ADF4351 Eval board:
 | D1-mini | ADF4351 | SPI |
 | ------- | ------- | --- |
 | D2 | LE	| CS |
@@ -79,4 +80,11 @@ with an externally generated GPS Diciplined Oscillator
 reference of 25 MHz to achieve a very precise LO frequency not subject
 to drift.
 
+Below a screenshot of the ADF4351 design Software:
 ![The ADF4351 Software](/Images/ADF435x_Software_Main.png)
+
+The 6 registers at the bottom of the screenshot are numbered R0 thru R5 and
+must be transferred into the ADF4351 in inverse order, R5 downto R0.
+
+Below an oscillogram of the entire data transfer with the data decoded:
+![The ADF4351 Software](/Images/ADF4351_SPI_Controller_FromFlash.png)
