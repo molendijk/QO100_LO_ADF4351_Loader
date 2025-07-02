@@ -50,6 +50,7 @@ Done.
 ## Connections D1-mini to ADF4351 Eval board V1.4
 
 | D1-mini | ADF4351 | SPI |
+| ------- | ------- | --- |
 | D2 | LE	| CS |
 | D5 | CLK | SCK |
 | D7 | DAT | MOSI |
@@ -57,7 +58,8 @@ Done.
 
 Enable the chip:
 | ADF4351 | ADF4351 |
-| CE | 3V3 |
+| ------- | ------- |
+|   CE    |   3V3   |
 
 ## Load the ADF4351 registers
 
