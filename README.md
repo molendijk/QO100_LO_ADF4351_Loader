@@ -2,14 +2,14 @@
 
 ## Purpose
 
-In order to create an 2.4 GHz uplink to the QO100 geostationary satelite 
+In order to create an 2.4 GHz uplink to the QO100 geostationary satellite 
 using a standard HF transmitter operating in the range of 50 MHz up-to 50.5 MHz (6m), the
-up-converter needs to be supplied with an LO of 2350 MHz yielding the Narrow-band 
-QO100 transmit frequency of 2400 MHz up-to 2400.5 MHz.
+up-converter needs to be supplied with an LO of 2350 MHz, yielding the Narrow-band 
+QO100 up-link frequency of 2400 MHz up-to 2400.5 MHz.
 Such an LO can be easily created by using the ADF4351 synthesizer evaluation board as
 available from multiple sources at AliExpress.
 
-The only issues with these evaluation boards are
+Some issues with these evaluation boards are:
 1. The necessity to connect an external ADF4351 register loader to the SPI-like port
 2. The probably unoptimized PLL loop-filter
 3. The layout of these boards is undocumented, making it difficult to identify the parts of 2
