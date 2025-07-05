@@ -9,6 +9,9 @@ QO100 up-link frequency of 2400 MHz up-to 2400.5 MHz.
 Such an LO can be easily created by using the ADF4351 synthesizer evaluation board as
 available from multiple sources at AliExpress.
 
+The ADF4351 Evaluation Module:
+![The ADF4351 Evaluation Module](Images/ADF4351_EvalBoard.jpg)
+
 Some issues with these evaluation boards are:
 1. The necessity to connect an external ADF4351 register loader to the SPI-like port
 2. The probably unoptimized PLL loop-filter
