@@ -99,5 +99,8 @@ The 6 registers at the bottom of the screenshot are numbered R0 thru R5 and
 must be transferred into the ADF4351 in inverse order, R5 downto R0.
 
 Below an oscillogram of the entire data transfer with the data decoded:
-![The ADF4351 Software](/Images/ADF4351_SPI_Controller_FromFlash.png)
+![The ADF4351 loader SPI-frames](/Images/ADF4351_SPI_Controller_FromFlash.png)
 In this measurement we clearly see the load order is respected.
+
+Below the spectrum of the programmed ADF4351 Evaluation module on it's internal 25 MHz reference:
+![Spectrum Wide](/Images/ADF4351_2.350MHz_WIde.png)
