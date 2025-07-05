@@ -73,7 +73,10 @@ Enable the ADF4351 chip:
 
 - AOUT+ = LO Output ~2.5 dBm, 
 - AOUT- = Unused, must be terminated in 50 Ohms. Failure to terminate this output, even though not used will cause a large spur and reduce P-out of AOUT+
-- MCLK = Unused, can be used to inject an external 25 MHz reference provided the 0 Ohm resistor is moved from the onboard XO to the SMA MCLK input.
+- MCLK = Unused
+	- Can be used to inject an external 25 MHz reference provided the 0 Ohm resistor is moved 
+from the onboard XO to the SMA MCLK input. The on-board XO can be completely disabled by
+removing the 3.1 uH inductor, hence removing power from the XO.
 
 ## Load the ADF4351 registers
 
