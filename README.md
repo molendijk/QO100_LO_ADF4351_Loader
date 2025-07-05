@@ -66,14 +66,14 @@ Between the D1-mini and the ADF4351 Eval board:
 | D7 | DAT | MOSI |
 | Gnd | Gnd | Gnd |
 
-Enable the chip:
+Enable the ADF4351 chip:
 | ADF4351 | ADF4351 |
 | ------- | ------- |
 |   CE    |   3V3   |
 
-AOUT+ = LO Output ~2.5 dBm
-AOUT- = Unused, must be terminated in 50 Ohms. Failure to terminate this output, even though not used will cause a large spur and reduce P-out of AOUT+.
-MCLK = Unused, can be used to inject an external 25 MHz reference provided the 0 Ohm resistor is moved from the onboard XO to the SMA MCLK input.
+- AOUT+ = LO Output ~2.5 dBm, 
+- AOUT- = Unused, must be terminated in 50 Ohms. Failure to terminate this output, even though not used will cause a large spur and reduce P-out of AOUT+
+- MCLK = Unused, can be used to inject an external 25 MHz reference provided the 0 Ohm resistor is moved from the onboard XO to the SMA MCLK input.
 
 ## Load the ADF4351 registers
 
@@ -99,5 +99,8 @@ The 6 registers at the bottom of the screenshot are numbered R0 thru R5 and
 must be transferred into the ADF4351 in inverse order, R5 downto R0.
 
 Below an oscillogram of the entire data transfer with the data decoded:
-![The ADF4351 Software](/Images/ADF4351_SPI_Controller_FromFlash.png)
+![The ADF4351 loader SPI-frames](/Images/ADF4351_SPI_Controller_FromFlash.png)
 In this measurement we clearly see the load order is respected.
+
+Below the spectrum of the programmed ADF4351 Evaluation module on it's internal 25 MHz reference:
+![Spectrum Wide](/Images/ADF4351_2.350MHz_WIde.png)
