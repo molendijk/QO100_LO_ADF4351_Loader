@@ -110,3 +110,14 @@ In this measurement we clearly see the load order is respected.
 
 Below the spectrum of the programmed ADF4351 Evaluation module on it's internal 25 MHz reference:
 ![Spectrum Wide](/Images/ADF4351_2.350MHz_WIde.png)
+
+## Notes
+
+The ADF4351_EvalBoard V1.4 being undocumented, I reverse engineered the loop-filter part 
+to be able to simulate the PLL using ADIsimPLL.
+
+Below the loop-filter part:
+![The reverse engineered loopfilter](/Images/LoopFilter.png)
+
+Below the results from ADIsimPLL for the standard loop-filter on this module:
+![The ADIsimPLL frequency domain page](Images/ADF4351_std_LoopFilter.png)
